@@ -1,33 +1,45 @@
-# DEVELOP A MEMORY GAME 
+# DEVELOP A STOCK TICKER
 
 ## DESCRIPTION
 
-    The goal of this challenge is to develop a memory game. The game consists of a grid of cards. Each card has a symbol on one side. The cards are arranged randomly on the grid with the symbol face down. The player flips two cards over each turn. If the two cards have the same symbol, they remain face up. Otherwise, the cards flip back over after a short period of time. The goal of the game is to match all pairs of cards.
+The goal of this challenge is to develop a stock ticker. You will be provided with `simulated_sp500_intraday.csv`, a file containing sample S&P500 data for a single day.  The challenge has basic requirements and stretch goals.
 
 ## INSTRUCTIONS
 
-### 1. Choose a programming language of your choice.
-### 2. Choose a topic for your cards. Some examples are:
-        - Colors 
-        - Star Wars characters (you can choose this API https://akabab.github.io/starwars-api/#alljson)
-        - Pokemon characters (you can choose this API https://pokeapi.co/)
-        - Countries (you can choose this API https://flagsapi.com/#quick)
+### 1. Choose front-end and back-end programming language(s) and framework(s) of your choice.
+### 2. Develop the stock ticket. You can use the following steps as a guide:
 
-###  3. Develop the game. You can use the following steps as a guide:
-        - Create a grid of cards. The grid should be 4x4, 6x6, or 8x8.
-        - Choose number of players. The game can be played by one or two players.
-        - Add a card to the grid. The card should have a symbol on one side.
-        - Shuffle the cards on the grid.
-        - Add a click event to each card. When the player clicks a card, the card flips over.
-        - When the player clicks two cards, check if the cards have the same symbol. If the cards have the same symbol, the cards remain face up. Otherwise, the cards flip back over.
-        - When all pairs of cards are matched, the player wins the game.
+- Create a back-end REST API  which serves each line of the `.csv` file, sequentially, to the front-end.
+- Create a basic front-end which, for each minute, retrieves and displays ticker date for that tick.
 
+## Basic Requirements
 
-Use Copilot chat to support your learning and development.
-Use Copilot to speed up your development.
+- The stock ticker should have the following required features:
+    - A front-end and back-end
+    - A front-end that retrieves per-minute data from the back-end
+    - A front-end that displays the following per-minute data for each symbol:
+      - Stock symbol
+      - Current price
+- You must use Copilot to speed up your development
 
+## Stretch Goals
 
+- Customize front end to mimic a real-life stock ticker
+  - Make a stock ticker scrolls horizontally or has a grid interface (see below for examples)
+  - Include delta
+  - Include delta %
+  - Include up/down arrow
+  - Include Sparkline graph
+  - Include intra-day high/low
+- Add unit/integration tests
+- Add documentation
+- Have your codebase confirm to the following coding standard
 
-       
+## Example Ticker Formats
 
+### Horizontal Scroll w/Sparklines
 
+![horizontal-scroll](https://github.com/user-attachments/assets/cf29f994-2826-418c-bd24-cbbd177b43f1)
+
+### Grid
+![grid](https://github.com/user-attachments/assets/d01b173d-ee92-44e9-9ee1-57a2c528cd20)
