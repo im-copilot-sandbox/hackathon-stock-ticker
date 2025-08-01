@@ -6,11 +6,10 @@ The goal of this challenge is to develop a stock ticker. You will be provided wi
 
 ## INSTRUCTIONS
 
-### 1. Choose front-end and back-end programming language(s) and framework(s) of your choice.
-### 2. Develop the stock ticket. You can use the following steps as a guide:
-
-- Create a back-end REST API  which serves each line of the `.csv` file, sequentially, to the front-end.
-- Create a basic front-end which, for each minute, retrieves and displays ticker date for that tick.
+1. Choose front-end and back-end programming language(s) and framework(s) of your choice.
+2. Develop the stock ticket. You can use the following steps as a guide:
+    - Create a back-end REST API  which serves each line of the `.csv` file, sequentially, to the front-end.
+    - Create a basic front-end which, for each minute, retrieves and displays ticker date for that tick.
 
 ## Basic Requirements
 
